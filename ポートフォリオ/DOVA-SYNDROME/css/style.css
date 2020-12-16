@@ -1,0 +1,1201 @@
+@charset "UTF-8";
+/*==========================================================================
+# reset - ブラウザの差異や不要なスタイルを無くすためのスタイル
+========================================================================== */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td, small, button, time, figure {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+li, dd {
+  list-style-type: none;
+}
+
+header, footer, nav, section, article, aside, figure, figcaption {
+  display: block;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .is-pc {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .is-sp {
+    display: none;
+  }
+}
+
+body,
+html {
+  font-size: 14px;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "游ゴシック", "YuGothic";
+  line-height: 1.42857142;
+}
+
+@media (max-width: 767px) {
+  body,
+  html {
+    font-size: 12px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.inner {
+  max-width: 81.25%;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 55px;
+  background: #333333;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .header-lists {
+    display: flex;
+  }
+}
+
+.header-lists li {
+  height: 55px;
+  line-height: 55px;
+}
+
+.header-list {
+  display: block;
+  color: #EEEEEE;
+  padding: 0 1em;
+  font-size: 13px;
+}
+
+.header-list:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s;
+}
+
+@media (max-width: 767px) {
+  .header-list {
+    color: #535353;
+  }
+}
+
+.header-box {
+  background: #3DC9B3 url(/ポートフォリオ/DOVA-SYNDROME/img/bell.svg) 20px 15px no-repeat;
+  width: 184px;
+  margin: 0 0 0 1.4em;
+  padding: 0 0 0 46px;
+  height: 55px;
+  background-size: 20px 20px;
+}
+
+@media (max-width: 767px) {
+  .header-box {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.header-box a {
+  display: block;
+  padding-left: 2px;
+  color: #fff;
+}
+
+.header-box:hover {
+  background: #64D4C2 url(/ポートフォリオ/DOVA-SYNDROME/img/bell.svg) 20px 15px no-repeat;
+  background-size: 20px 20px;
+  transition: all 0.3s;
+}
+
+.top {
+  position: relative;
+  background: url(/ポートフォリオ/DOVA-SYNDROME/img/eyeCatch.png) no-repeat center center/cover;
+  padding-bottom: 140px;
+}
+
+@media (max-width: 767px) {
+  .top {
+    background: url(/ポートフォリオ/DOVA-SYNDROME/img/eyeCatch.png) no-repeat -550px 0px/cover;
+  }
+}
+
+.top:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: 0.1;
+}
+
+.top-inner {
+  padding-top: 135px;
+}
+
+.top-logo {
+  width: 150px;
+  height: 150px;
+  margin: 50px auto 0;
+}
+
+.top-title {
+  text-align: center;
+  font-size: 42px;
+  color: #fff;
+  letter-spacing: 12px;
+  margin-top: 36px;
+  text-shadow: 0 0 15px #ABB35C;
+  font-family: 'Varela Round',"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "游ゴシック", "YuGothic";
+}
+
+@media (max-width: 767px) {
+  .top-title {
+    font-size: 20px;
+  }
+}
+
+.top-text {
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  margin: 20px 0 40px;
+  letter-spacing: 1px;
+  line-height: 2.2;
+}
+
+.top-box {
+  width: 47.86%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 2px;
+  padding: 18px 0 20px 26px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .top-box {
+    width: 100%;
+    padding: 18px 20px;
+  }
+}
+
+.top-list {
+  color: #434343;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.top-list:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .top-list {
+    padding-bottom: 4px;
+    border-bottom: 0.5px solid #3DC9B3;
+  }
+}
+
+.top-list img {
+  width: 20px;
+  margin-right: 12px;
+}
+
+@media (max-width: 767px) {
+  .top-list img {
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.section-title {
+  padding-top: 90px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 27px;
+  letter-spacing: 0.5px;
+  color: #535353;
+  font-weight: bold;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #3DC9B3;
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
+}
+
+.section-footer {
+  width: 100%;
+  background: #F5F5F5;
+  margin: 0 auto;
+  padding: 30px 18px 20px 40px;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  .section-footer {
+    display: flex;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-footer {
+    width: 100%;
+    padding: 18px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-footer-left {
+    padding-right: 52px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-footer-left {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+
+.section-footer-left img {
+  width: 100px;
+}
+
+.section-footer-item {
+  margin-bottom: 16px;
+  font-size: 14px;
+  padding-top: 1px;
+  color: #535353;
+}
+
+@media (min-width: 768px) {
+  .section-footer-item {
+    display: flex;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-footer-item {
+    padding-bottom: 4px;
+    border-bottom: 0.5px solid #3DC9B3;
+    font-size: 12px;
+  }
+}
+
+.section-footer-item img {
+  width: 20px;
+  margin-right: 12px;
+  height: 17.8px;
+}
+
+@media (max-width: 767px) {
+  .section-footer-item img {
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.section-footer-text {
+  padding-top: 4px;
+}
+
+.uses {
+  position: relative;
+  padding-bottom: 105px;
+}
+
+.uses:after {
+  content: "";
+  position: absolute;
+  bottom: -84px;
+  left: 50%;
+  z-index: 500;
+  display: block;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 35px solid #fff;
+}
+
+.uses-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.uses-item {
+  display: block;
+  width: 100%;
+  flex: 0 0 25%;
+  padding: 0 15px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 104px;
+}
+
+@media (max-width: 767px) {
+  .uses-item {
+    flex: 0 0 50%;
+  }
+}
+
+.uses-item img {
+  width: 156px;
+  height: 156px;
+}
+
+.uses-item-title {
+  margin: 15px 0;
+  line-height: 25px;
+  text-align: center;
+  color: #3DC9B3;
+  font-size: 15px;
+}
+
+.uses-item-text {
+  font-size: 12.5px;
+  line-height: 1.7;
+  text-align: justify;
+  letter-spacing: 1px;
+  text-indent: 1em;
+  color: #535353;
+}
+
+@media (max-width: 767px) {
+  .uses-item-text {
+    font-size: 10px;
+  }
+}
+
+.creator {
+  background: #E3558B;
+  padding-bottom: 105px;
+  position: relative;
+}
+
+.creator:after {
+  content: "";
+  position: absolute;
+  bottom: -84px;
+  left: 50%;
+  z-index: 500;
+  display: block;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 35px solid #E3558B;
+}
+
+.creator-title {
+  color: #fff;
+  padding-bottom: 24px;
+  padding-top: 140px;
+}
+
+@media (min-width: 768px) {
+  .creator-container {
+    display: flex;
+  }
+}
+
+.creator-left,
+.creator-right {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .creator-left,
+  .creator-right {
+    width: 100%;
+  }
+}
+
+.creator-pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.creator-picture {
+  flex: 0 0 16.66%;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .creator-picture {
+    flex: 0 0 25%;
+  }
+}
+
+.creator-picture img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 7px;
+  margin: 10px 15px 0 0;
+}
+
+.creator-right-title {
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 0.5em;
+}
+
+@media (max-width: 767px) {
+  .creator-right-title {
+    font-size: 14px;
+  }
+}
+
+.creator-right-text {
+  font-size: 13px;
+  padding: 0 0.5em;
+  color: #fff;
+  text-indent: 1em;
+  margin-bottom: 13px;
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  .creator-right-text {
+    font-size: 12px;
+  }
+}
+
+.creator-more {
+  color: #fff;
+  line-height: 1.7;
+  font-size: 13px;
+  padding: 0 0.5em;
+}
+
+.creator-more a {
+  display: inline-block;
+  margin: 0 4px;
+  background: #FFFFFF33;
+}
+
+.creator-right-footer {
+  margin: 0 auto;
+}
+
+.creator-button {
+  width: 49.12%;
+  height: 34px;
+  line-height: 1.4285;
+  color: #fff;
+  background: #3DC9B3;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-left: 18px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .creator-button {
+    width: 80%;
+    margin-bottom: 12px;
+  }
+}
+
+.creator-sample {
+  height: 34px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  margin-left: 26px;
+  padding: 2px;
+}
+
+@media (max-width: 767px) {
+  .creator-sample {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+  }
+}
+
+.creator-sample:hover {
+  color: #333;
+  transition: all 0.3s;
+}
+
+.creator-footer {
+  margin-top: 60px;
+}
+
+.price {
+  background: #F5F5F5;
+  padding-bottom: 105px;
+  position: relative;
+}
+
+.price:after {
+  content: "";
+  position: absolute;
+  bottom: -84px;
+  left: 50%;
+  z-index: 500;
+  display: block;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 35px solid #F5F5F5;
+}
+
+.price-title {
+  padding-top: 100px;
+}
+
+.price-text-gray {
+  font-size: 18px;
+  color: #8C9398;
+  text-align: center;
+  margin: 18px 0 30px;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 767px) {
+  .price-text-gray {
+    font-size: 14px;
+  }
+}
+
+.price-more {
+  text-align: center;
+  line-height: 1.4285;
+  color: #333;
+}
+
+.price-items {
+  margin: 46px 0;
+}
+
+@media (min-width: 768px) {
+  .price-items {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .price-items {
+    margin: 30px 0;
+  }
+}
+
+.price-item {
+  background: url(/ポートフォリオ/DOVA-SYNDROME/img/price-bg.png) center center no-repeat;
+  padding: 0 15px;
+  height: 220px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .price-item {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (max-width: 767px) {
+  .price-item {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+.price-item img {
+  width: 126px;
+  margin: 30px 0 8px;
+}
+
+.price-item-title {
+  color: #fff;
+  height: 25px;
+  line-height: 25px;
+}
+
+.price-item-text {
+  color: #fff;
+}
+
+.price-item-text span {
+  font-size: 11px;
+}
+
+.price-footer {
+  background: #fff;
+}
+
+.flow {
+  padding-bottom: 105px;
+  position: relative;
+}
+
+.flow:after {
+  content: "";
+  position: absolute;
+  bottom: -84px;
+  left: 50%;
+  z-index: 500;
+  display: block;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 35px solid #fff;
+}
+
+.flow-title {
+  padding-top: 100px;
+}
+
+.flow-title-gray {
+  font-size: 18px;
+  color: #8C9398;
+  text-align: center;
+  margin: 18px 0 30px;
+}
+
+@media (max-width: 767px) {
+  .flow-title-gray {
+    font-size: 14px;
+  }
+}
+
+.flow-text {
+  text-align: center;
+}
+
+.flow-title-green {
+  margin-top: 68px;
+  font-size: 20px;
+  background: #3DC9B3;
+  width: 100%;
+  color: #fff;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.flow-item {
+  position: relative;
+  width: 93%;
+  padding: 0 0 25px 50px;
+  margin-left: 50px;
+  margin-top: -16px;
+  border-left: 1px solid #E3558B;
+}
+
+@media (max-width: 767px) {
+  .flow-item {
+    margin-left: 24px;
+  }
+}
+
+.flow-item-number {
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background: #E3558B;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.flow-item-title {
+  font-size: 17px;
+  color: #E3558B;
+  margin: 17px 0 10px 0;
+}
+
+.flow-item-text {
+  line-height: 2;
+  color: #535353;
+}
+
+.flow-item-text a {
+  color: #535353;
+}
+
+.flow-item-text a:hover {
+  color: #3DC9B3;
+  transition: all 0.3s;
+}
+
+.flow-item-footer-text {
+  display: block;
+  background: #F2F2F2;
+  margin: 15px 0 0;
+  padding-right: 8px;
+  text-align: right;
+  height: auto;
+  line-height: 28px;
+  width: 100%;
+}
+
+.border-none {
+  border-left: none;
+}
+
+.flow-item-text-more {
+  color: #E3558B;
+}
+
+.green2 {
+  margin-top: 30px;
+}
+
+.contact {
+  background: #E3558B;
+  padding-bottom: 105px;
+}
+
+.contact-title {
+  color: #fff;
+}
+
+.contact-text {
+  font-size: 18px;
+  margin: 18px 0 30px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.contact-text-more {
+  color: #fff;
+  text-align: center;
+}
+
+.contact-buttons {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .contact-buttons {
+    margin-top: 12px;
+  }
+}
+
+.contact-button {
+  background: #3DC9B3 url(/ポートフォリオ/DOVA-SYNDROME/img/pdf.png) 10px 1px no-repeat;
+  height: 28px;
+  line-height: 29px;
+  padding: 0 16px 0 38px;
+  border-radius: 2px;
+  margin: 22px 24px 40px 0;
+}
+
+@media (max-width: 767px) {
+  .contact-button {
+    margin: 10px 20px 10px 0;
+  }
+}
+
+.contact-button a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.contact-form {
+  width: 100%;
+  background: #fff;
+  padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    margin-top: 12px;
+    padding-top: 0;
+  }
+}
+
+.contact-inner {
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.contact-form-title {
+  width: 100%;
+  font-size: 20px;
+  border-bottom: 1px solid #3DC9B3;
+  margin: 20px 0 30px 0;
+  padding-left: 8px;
+}
+
+@media (max-width: 767px) {
+  .contact-form-title {
+    text-align: center;
+  }
+}
+
+.contact-item {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .contact-item {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-item {
+    margin-bottom: 36px;
+  }
+}
+
+.contact-required {
+  position: absolute;
+  top: 4px;
+  left: 140px;
+  font-size: 10px;
+  color: #fff;
+  background: #E3558B;
+  padding: 2px 2px 0 2px;
+  width: 2.6em;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+@media (max-width: 767px) {
+  .contact-required {
+    top: 2px;
+    left: 88.52%;
+  }
+}
+
+.contact-name {
+  text-align: right;
+  width: 17%;
+  position: relative;
+  padding-top: 28px;
+  font-weight: normal;
+  margin: 0 28px 0 18px;
+}
+
+@media (max-width: 767px) {
+  .contact-name {
+    width: 100%;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.contact-input,
+.contact-selects,
+.contact-textarea {
+  width: 100%;
+}
+
+select,
+input[type="name"],
+input[type="email"],
+input[type="number"],
+input[type="text"],
+input[type="address"] {
+  width: 50%;
+  background: #fafafa;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #535353;
+  height: 50px;
+}
+
+@media (max-width: 767px) {
+  select,
+  input[type="name"],
+  input[type="email"],
+  input[type="number"],
+  input[type="text"],
+  input[type="address"] {
+    width: 100%;
+  }
+}
+
+.quantity {
+  height: 314px;
+}
+
+.contact-quantity-lists {
+  width: 100%;
+}
+
+.contact-quantity-list {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .contact-quantity-list {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-quantity-list {
+    text-align: right;
+  }
+}
+
+.contact-quantity-list span {
+  position: absolute;
+  top: 17px;
+  left: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  z-index: 500;
+}
+
+@media (min-width: 768px) {
+  #quantity {
+    flex: 0 0 25%;
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  #quantity {
+    width: 50%;
+  }
+}
+
+textarea {
+  width: 95%;
+  background: #fafafa;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #535353;
+  height: 200px;
+}
+
+@media (max-width: 767px) {
+  textarea {
+    width: 100%;
+  }
+}
+
+.textarea {
+  height: 200px;
+}
+
+.required-pink {
+  border: 1px solid #E3558B !important;
+}
+
+.required-pink::placeholder {
+  color: #E3558B !important;
+}
+
+.contact-footer-text {
+  text-align: center;
+}
+
+.contact-footer-text a {
+  color: #535353;
+}
+
+.contact-footer-text a:hover {
+  color: #3DC9B3;
+  transition: all 0.3s;
+}
+
+.display-none {
+  display: none;
+  transition: all 0.3s;
+}
+
+.submit-box {
+  width: 100%;
+  margin: 18px auto 24px;
+  text-align: center;
+}
+
+.contact-submit {
+  font-size: 20px;
+  color: #fff;
+  background: #3DC9B3;
+  width: 80%;
+  height: 64px;
+  line-height: 64px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .contact-submit {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.contact-submit-dummy {
+  font-size: 20px;
+  color: #E3558B;
+  text-align: center;
+  background: #e5e5e5;
+  width: 80%;
+  height: 64px;
+  line-height: 64px;
+  margin: 18px auto 24px;
+}
+
+@media (max-width: 767px) {
+  .contact-submit-dummy {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+}
+
+.contact-submit-p {
+  font-size: 13px;
+  border-bottom: 1px solid #E3558B;
+  color: #E3558B;
+  margin-left: 31.5%;
+}
+
+@media (max-width: 767px) {
+  .contact-submit-p {
+    margin-left: 0;
+  }
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  width: 100%;
+}
+
+.footer-sns {
+  text-align: center;
+}
+
+.fab {
+  font-size: 20px;
+  margin: 26px 46px 12px 0;
+  color: #D5D5D5;
+}
+
+.fab:first-child {
+  margin-left: 46px;
+}
+
+.fab:hover {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.copyright {
+  font-size: 12px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 12px;
+}
+
+.page-top {
+  margin: 0;
+  padding: 0;
+}
+
+.page-top p {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  right: 26px;
+  bottom: 34px;
+  z-index: 500;
+}
+
+.move-page-top {
+  display: block;
+  background: #333;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  line-height: 1.42857143;
+  text-decoration: none;
+  text-align: center;
+  border: 4px solid #333;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.move-page-top:hover {
+  opacity: 0.85;
+}
