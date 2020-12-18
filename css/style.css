@@ -655,6 +655,10 @@ button:focus {
     transition: all 0.5s;
 }
 
+.recommended {
+    color: pink;
+}
+
 /*=========================
         9.CONTACT
 ===========================*/
